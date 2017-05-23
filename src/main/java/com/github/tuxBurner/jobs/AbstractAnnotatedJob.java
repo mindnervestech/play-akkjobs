@@ -15,6 +15,8 @@ import static com.github.tuxBurner.jobs.JobModule.LOGGER;
 @NoInstanceJob
 public abstract class AbstractAnnotatedJob extends AbstractAkkaJob {
 
+	public AbstractAnnotatedJob(){}
+	
   public AbstractAnnotatedJob(ActorSystem actorSystem) throws JobException {
     super(actorSystem);
 

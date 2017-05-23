@@ -43,6 +43,8 @@ public abstract class AbstractAkkaJob implements Runnable {
    * When the job runs this is the cancallable
    */
   private Cancellable cancellable;
+  
+  public AbstractAkkaJob(){}
 
   public AbstractAkkaJob(final ActorSystem actorSystem) throws JobException {
 
